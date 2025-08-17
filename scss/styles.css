@@ -1,0 +1,137 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 32px;
+  color: white;
+  background-color: #1e3a8a;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+  background-color: #f59e0b;
+  color: #1e3a8a;
+}
+
+.hero {
+  position: relative;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1f2937;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero::before {
+  content: '';
+  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  inset: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 1;
+}
+
+.movies .movie-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: 16px;
+  text-align: center;
+  -webkit-box-shadow: 0 4px 132px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 132px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.movies .movie-card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.movies {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  padding: 32px;
+}
+
+.movies .movie-card img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.movies .movie-card h3 {
+  font-size: 1.3rem;
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+.movies .movie-card .ratting {
+  font-size: 1.3rem;
+  color: % primary-color;
+  margin-bottom: 8px;
+}
+
+.movies .movie-card p {
+  color: #1f2937;
+}
+/*# sourceMappingURL=styles.css.map */

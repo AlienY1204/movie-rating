@@ -1,0 +1,26 @@
+.hero{
+      position: relative; //给伪元素做定位参考
+      height: 300px;
+      @include flex-center; //使用flexbox居中内容
+      color:$text-color;
+      font-size: 2.5rem;
+      font-weight: bold;
+
+      //半透明背景图片
+      &::before{
+            content: '';
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            inset:0; 
+            opacity: 0.5; //设置透明度
+            z-index: -1; //放在背景层
+      }
+      h1{
+            // z-index只对定位元素生效，不包括static
+            position: relative;
+            z-index: 1; //放在前景层
+      }
+}
